@@ -1,59 +1,47 @@
 /*----- constants -----*/
+let artistsData;
 const $selectArtist = $('#selectArtist');
 const $option = $('option');
 const $submit = $('#submit');
 const $btn = $('#btn');
-let artistsData;
+const $artist = $('#name');
+const $title = $('#title');
+const $info = $('#info')
 const $biography = $('#biography');
-// console.log($selectArtist);
 /*----- app's state (variables) -----*/
 /*----- cached element references -----*/
 /*----- event listeners -----*/
 /*----- functions -----*/
 
-function render () {
-    $option.text(artistsData["id"]);
-    console.log(artistsData)
-    // function data () {
-    //     document.$('165157').addEventListener('click')
-    //     }
 
-}
 
 function handleGetData(event){
     event.preventDefault(); 
-    // $selectArtist.val();
-    let artistText = $('select#selectArtist').val()
-    console.log(artistText);
+    let artistText = $('select#selectArtist').val();
+  
+    // ) 
+    // function data () {
+    // if (value = '165157');
+    // // return ()
+    // console.log(artistText);
+
 
 $.ajax({
-  url: `https://openaccess-api.clevelandart.org/api/artworks/?&african_american_artists&limit=10&t=${artistText}`
+  url: `https://openaccess-api.clevelandart.org/api/artworks/?&african_american_artists&limit=10&title=${artistText}`
 })
     .then(function (data) {
-    // console.log(data);
-    // displayArtists(data);
     artistsData = data;
-    // console.log(artists);
     render()
-},
-    function displayArtists (data) {
-        const artists = data.artist[0];
-        console.log(artists)
-        // console.log("bad request: ", error);
-      }
-);
+});
+}
+function render () {
+    console.log(typeof artistsData)
+    $artist.append(artistsData.collection);
+    // function myFunction() {
+    //     $option.value = "165157"
+    //   }
 }
 $('form').on('submit', handleGetData);
-
-// $('#btn').on ('click', function() {
-//     event.preventDefault(); 
-//     // console.log(artists);
-// })
-// let choices = artists.filter(function (artists) {return artists === artists.creators[1]})
-
-// console.log(artists)s
-
-
 
 
 // Dropdown Menu
