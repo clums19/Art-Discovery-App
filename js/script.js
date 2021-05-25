@@ -13,10 +13,10 @@ const $facts = $('#facts');
 
 function render () {
     console.log(artistsData)
-    $artist.append(artistsData.data[0].creators[0].description);
-    $title.append(artistsData.data[0].title);
-    $info.append(artistsData.data[0].url)
-    $facts.append(artistsData.data[0].wall_description)
+    $artist.html(artistsData.data[0].creators[0].description);
+    $title.html(artistsData.data[0].title);
+    $info.html(artistsData.data[0].url);
+    $facts.html(artistsData.data[0].wall_description);
 }
 
 
