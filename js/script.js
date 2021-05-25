@@ -4,7 +4,8 @@ const $selectArtist = $('#selectArtist');
 const $submit = $('#submit');
 const $artist = $('#name');
 const $title = $('#title');
-const $info = $('#info')
+const $info = $('#info');
+const $facts = $('#facts');
 /*----- app's state (variables) -----*/
 /*----- cached element references -----*/
 /*----- event listeners -----*/
@@ -14,19 +15,14 @@ function render () {
     console.log(artistsData)
     $artist.append(artistsData.data[0].creators[0].description);
     $title.append(artistsData.data[0].title);
-    $info.append(artistsData.data[0].url);
-   
+    $info.append(artistsData.data[0].url)
+    $facts.append(artistsData.data[0].wall_description)
 }
+
 
 function handleGetData(event){
     event.preventDefault(); 
     let artistText = $('select#selectArtist').val();
-  
-    // ) 
-    // function data () {
-    // if (value = '165157');
-    // // return ()
-    console.log(artistText);
 
 $.ajax({
   url: `https://openaccess-api.clevelandart.org/api/artworks/?&african_american_artists&limit=10&title=${artistText}`
@@ -35,9 +31,11 @@ $.ajax({
     artistsData = data;
     render()
 });
+
 }
 
 $('form').on('submit', handleGetData);
+
 
 
 // Dropdown Menu
