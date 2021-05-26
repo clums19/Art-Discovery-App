@@ -1,12 +1,19 @@
 body {
     background-color: rgb(212, 169, 28);
-    border-image: url(/imgs/african-kente-pattern-background.jpeg);
     border-width: 50px;
     border-style: double;
-    min-width: 680px;
+    min-width: 375px;
     text-align: center;
 }
 header {
     font-size: 50px;
     font-family: 'Amatic SC', cursive;
+    border-color: brown;
+    border-width: 50px;
+}
+p, main, footer {
+    font-family: 'Oswald', sans-serif;
+}
+img {
+    width: 100%;
 }
