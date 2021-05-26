@@ -8,6 +8,19 @@ const $info = $('#info');
 const $facts = $('#facts');
 /*----- app's state (variables) -----*/
 /*----- cached element references -----*/
+
+$("#jacob").wrap("<a target='_blank' href='https://clevelandart.org/art/2007.158'></a>")
+$("#aaron").wrap("<a target='_blank' href='https://clevelandart.org/art/2005.181'></a>")
+$("#rob").wrap("<a target='_blank' href='https://clevelandart.org/art/2014.12'></a>")
+$("#edomina").wrap("<a target='_blank' href='https://clevelandart.org/art/2011.110'></a>")
+$("#simone").wrap("<a target='_blank' href='https://clevelandart.org/art/2019.175'></a>")
+$("#savage").wrap("<a target='_blank' href='https://clevelandart.org/art/2003.40'></a>")
+$("#lewis").wrap("<a target='_blank' href='https://clevelandart.org/art/2017.1'></a>")
+$("#puryear").wrap("<a target='_blank' href='https://clevelandart.org/art/2002.65'></a>")
+$("#cole").wrap("<a target='_blank' href='https://clevelandart.org/art/2017.128'></a>")
+$("#sallee").wrap("<a target='_blank' href='https://clevelandart.org/art/2006.202'></a>")
+
+
 /*----- event listeners -----*/
 /*----- functions -----*/
 
