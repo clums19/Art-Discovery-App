@@ -4,6 +4,7 @@ body {
     border-style: double;
     min-width: 375px;
     text-align: center;
+    position: relative;
 }
 main {
     border-width: 25px;
