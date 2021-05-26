@@ -5,11 +5,24 @@ body {
     min-width: 375px;
     text-align: center;
 }
+main {
+    border-width: 25px;
+    border-color: rgb(172, 108, 13);
+    border-style: ridge;
+}
+div.centered {
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 75px;
+}
 header {
     font-size: 50px;
     font-family: 'Amatic SC', cursive;
     border-color: brown;
     border-width: 50px;
+}
+p, div{
+    font-size: 20px;
 }
 p, main, footer {
     font-family: 'Oswald', sans-serif;
