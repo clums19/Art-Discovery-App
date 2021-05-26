@@ -29,7 +29,7 @@ A web application with easy functionality that specifically displays Black Artis
 
 ## Getting Started
 
-[Click here](https://clums19.github.io/Virtual-Melanin-Museum/) to see working app.
+[Click here](https://virtual-melanin-museum.netlify.app/) to see working app.
 
 ## Future Enhancements
 

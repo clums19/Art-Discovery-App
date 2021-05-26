@@ -2,7 +2,7 @@ body {
     background-color: rgb(212, 169, 28);
     border-width: 50px;
     border-style: double;
-    min-width: 375px;
+    min-width: 360px;
     text-align: center;
     position: relative;
 }
