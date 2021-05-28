@@ -21,7 +21,8 @@ A web application with easy functionality that specifically displays Black Artis
 <br>
 
 ## Screenshots
-
+![Screenshot](./imgs/example.1.png)
+![Screenshot](./imgs/example.2.png)
 <br>
 
 ### Wireframe
